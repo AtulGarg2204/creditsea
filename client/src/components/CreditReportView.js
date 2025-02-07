@@ -8,9 +8,10 @@ const CreditReport = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    
     const fetchReport = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/latest');
+        const response = await axios.get(`${process.env.REACT_APP_URL}/api/latest`);
         setReport(response.data);
         setLoading(false);
       } catch (err) {
