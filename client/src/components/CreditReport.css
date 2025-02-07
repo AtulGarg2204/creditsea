@@ -1,0 +1,193 @@
+.credit-report {
+    margin-top: 2rem;
+  }
+  
+  .report-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-section h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .details-grid, .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .detail-item, .summary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  span {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .credit-score span {
+    color: #27ae60;
+    font-size: 1.8rem;
+  }
+  
+  .accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .account-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease;
+  }
+  
+  .account-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .account-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+  }
+  
+  .card-tag {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .card-tag.credit-card {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .card-tag.other {
+    background: #f5f5f5;
+    color: #616161;
+  }
+  
+  .account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .overdue {
+    color: #e74c3c;
+  }
+  
+  .address {
+    font-size: 0.9rem;
+    color: #34495e;
+    word-break: break-word;
+  }
+  
+  .loading, .error, .no-data {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
+  
+  @media (max-width: 768px) {
+    .report-section {
+      padding: 0; /* Remove padding for mobile */
+      box-shadow: none; /* Remove shadow on mobile */
+      background: none; /* Remove background on mobile */
+      margin-bottom: 0; /* Remove margin between sections */
+    }
+  
+    .accounts-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .account-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 10px;
+    }
+  
+    .detail-item, .summary-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+  
+    label {
+      color: #666;
+      font-size: 0.9rem;
+    }
+  
+    span {
+      font-size: 0.9rem;
+      color: #333;
+    }
+  
+    .credit-score span {
+      color: #27ae60;
+      font-size: 1.2rem;
+    }
+  
+    .account-header {
+      flex-direction: row; /* Keep header items in a row */
+      margin-bottom: 0.5rem;
+    }
+  
+    .account-header h3 {
+      font-size: 1rem;
+    }
+  
+    .card-tag {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem;
+    }
+  
+    .detail-row {
+      padding: 4px 0;
+    }
+  }
