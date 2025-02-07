@@ -36,8 +36,8 @@ This application processes XML files containing soft credit pull data from Exper
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/AtulGarg2204/creditsea-assignment.git
-cd creditsea-assignment
+git clone https://github.com/AtulGarg2204/creditsea.git
+cd creditsea
 ```
 
 ### 2. Install backend dependencies
@@ -89,13 +89,13 @@ Access the application at `http://localhost:3000`
 
 ## Project Structure
 ```plaintext
-creditsea-assignment/
+creditsea/
 ├── client/
 │   ├── public/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── FileUpload.js
-│   │   │   └── CreditReport.js
+│   │   │   └── CreditReportView.js
 │   │   ├── App.js
 │   │   └── index.js
 ├── server/
