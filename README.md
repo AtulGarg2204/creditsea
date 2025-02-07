@@ -36,7 +36,7 @@ This application processes XML files containing soft credit pull data from Exper
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/creditsea-assignment.git
+git clone https://github.com/AtulGarg2204/creditsea-assignment.git
 cd creditsea-assignment
 ```
 
