@@ -19,7 +19,7 @@ const FileUpload = ({ onUploadSuccess }) => {
     formData.append('file', file);
 
     try {
-      await axios.post(`${process.env.REACT_APP_URL}/api/upload`, formData);
+      await axios.post('http://localhost:5000/api/upload', formData);
       onUploadSuccess();
       setFile(null);
       setError(null);

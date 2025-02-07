@@ -11,7 +11,7 @@ const CreditReport = () => {
     
     const fetchReport = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_URL}/api/latest`);
+        const response = await axios.get('http://localhost:5000/api/latest');
         setReport(response.data);
         setLoading(false);
       } catch (err) {
